@@ -51,11 +51,12 @@
 
     }
     .header .Logo {
-        font-size: 12px;
+        font-size: 10px;
     }
     .header .navbar a {
         font-size: 16px;
         margin-left: 20px;
+
     }
 }
 
@@ -148,6 +149,8 @@ body{
     width: 00%;
     z-index: -1;
     transition: .3s;
+    transition: background-color 0.3s, color 0.3s;
+
 
 }
 .btn:hover:before{
@@ -167,6 +170,15 @@ body{
 .btn-explore:hover{
     color: #fff;
 }
+.btn.loading {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .newtons-cradle.active .newtons-cradle__dot {
+    animation-play-state: running;
+  }
+  
 section{
     padding: 3rem 9% 2rem;
     background: #e8e7e7;
